@@ -7,15 +7,15 @@ const client = new Discord.Client({
 });
 
 const BOT_PREFIX = '!'
-const MOD_ME_COMMAND = 'MOD0ME'
+const MOD_ME_COMMAND = 'mod-me'
 
 client.on('ready', () => {
     console.log('Our bot is ready to go')
 })
 
-client.on('messageDelete', msg => {
-    msg.channel.send(`Stop deleting messages!`)
-})
+// client.on('messageDelete', msg => {
+//     msg.channel.send(`Stop deleting messages!`)
+// })
 
 client.on('message', msg => {
     // if (msg.content != '') {
